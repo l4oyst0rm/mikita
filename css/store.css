@@ -1,0 +1,48 @@
+a {
+    text-decoration: none;
+}
+
+.ranks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.rank:hover p {
+    transform: translateY(0px);
+    transition: all .3s;
+}
+
+.rank img {
+    box-shadow: 0 0 20px rgb(150, 150, 150);
+    border-radius: 25px;
+    height: 250px;
+    width: 250px;
+}
+
+.rank {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rank p {
+    font-size: 30px;
+    transform: translateY(-50px);
+    transition: all .3s;
+    color: rgb(0, 0, 0);
+    z-index: -1;
+}
+
+@media only screen and (max-width: 700px) {
+    .rank img {
+        height: 150px;
+        width: 150px;
+    }
+    .rank p {
+        font-size: 20px;
+        transform: translateY(0px);
+    }
+}
